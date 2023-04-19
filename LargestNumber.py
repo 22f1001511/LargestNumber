@@ -16,5 +16,5 @@ if(st.button("Let's Find")):
         if b > a and b > c:
             largest = b
         if c > a and c > b:
-            largest = c    
-st.text(largest, "is the largest of three numbers.")
+            largest = c
+        st.text(largest, "is the largest of three numbers.")
