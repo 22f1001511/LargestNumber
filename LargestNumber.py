@@ -18,6 +18,6 @@ if(st.button("Let's Find")):
             largest = val1
         elif val2 > val1 and val2 > val3:
             largest = val2
-        else
+        else:
             largest = val3
         st.text("{}is the largest of three numbers.".format(largest))
