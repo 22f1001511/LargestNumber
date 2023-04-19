@@ -1,6 +1,10 @@
-a = int(input('Enter first number  : '))
-b = int(input('Enter second number : '))
-c = int(input('Enter third number  : '))
+import streamlit as st
+
+st.title("Find largest of three numbers")
+
+a = st.text_input("Enter first number", "Type Here ...")
+b = st.text_input("Enter second number", "Type Here ...")
+c = st.text_input("Enter third number", "Type Here ...")
 
 largest = 0
 
@@ -11,4 +15,4 @@ if b > a and b > c:
 if c > a and c > b:
     largest = c
 
-print(largest, "is the largest of three numbers.")
+st.text(largest, "is the largest of three numbers.")
