@@ -11,10 +11,13 @@ if(st.button("Let's Find")):
     if a == "" or b == "" or c == "":
         st.error("please enter all three numbers")
     else:
-        if a > b and a > c:
-            largest = a
-        if b > a and b > c:
-            largest = b
-        if c > a and c > b:
-            largest = c
+        val1 = int(a)
+        val2 = int(b)
+        val3 = int(c)
+        if val1 > val2 and val1 > val3:
+            largest = val1
+        else if val2 > val1 and val2 > val3:
+            largest = val2
+        else
+            largest = val3
         st.text("{}is the largest of three numbers.".format(largest))
