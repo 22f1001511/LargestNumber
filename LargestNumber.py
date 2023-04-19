@@ -16,7 +16,7 @@ if(st.button("Let's Find")):
         val3 = int(c)
         if val1 > val2 and val1 > val3:
             largest = val1
-        else if val2 > val1 and val2 > val3:
+        elif val2 > val1 and val2 > val3:
             largest = val2
         else
             largest = val3
