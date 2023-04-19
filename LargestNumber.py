@@ -20,4 +20,4 @@ if(st.button("Let's Find")):
             largest = val2
         else:
             largest = val3
-        st.text("{}is the largest of three numbers.".format(largest))
+        st.text("{} is the largest of three numbers.".format(largest))
