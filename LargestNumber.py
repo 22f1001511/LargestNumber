@@ -2,18 +2,19 @@ import streamlit as st
 
 st.title("Find largest of three numbers")
 
-a = st.text_input("Enter first number", "Type Here ...")
-b = st.text_input("Enter second number", "Type Here ...")
-c = st.text_input("Enter third number", "Type Here ...")
+a = st.text_input("Enter first number", "")
+b = st.text_input("Enter second number", "")
+c = st.text_input("Enter third number", "")
 
+largest = 0
 if(st.button("Let's Find")):
-    largest = 0
-
-    if a > b and a > c:
-        largest = a
-    if b > a and b > c:
-        largest = b
-    if c > a and c > b:
-        largest = c
-
-    st.text(largest, "is the largest of three numbers.")
+    if a == "" or b == "" or c == "":
+        st.error("please enter all three numbers")
+    else:
+        if a > b and a > c:
+            largest = a
+        if b > a and b > c:
+            largest = b
+        if c > a and c > b:
+            largest = c    
+st.text(largest, "is the largest of three numbers.")
